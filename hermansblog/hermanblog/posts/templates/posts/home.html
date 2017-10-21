@@ -46,7 +46,13 @@
     </nav>
 
     <div class="container">
-        <h1>Welcom to the blog</h1>
+        <h1 class="text-center">Welcome to Herman's blog</h1>
+
+        {% load static %}
+        <img src="{%  static 'posts/home.jpg' %}"
+             class="img-responsive center-block"
+             style="max-height:300px;"
+        />
 
         <h2>latest Posts</h2>
 

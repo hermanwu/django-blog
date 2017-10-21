@@ -54,6 +54,9 @@ Configure urlpatterns for detailed post page
 Make everything pretty using bootstrap
 
 43 Static Images
+- {% load static %}
+
+
 
 44 Cleanup
 
