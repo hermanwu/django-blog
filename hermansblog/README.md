@@ -55,10 +55,9 @@ Make everything pretty using bootstrap
 
 43 Static Images
 - {% load static %}
+- free image: unsplash.com
 
-
-
-44 Cleanup4
+44 Cleanup
 
 45 DISQUS - Adding Comments
-
+- remember to add identifier for disqus of each page

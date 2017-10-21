@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Nicks blog</title>
+    <title>Hermans blog</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#">Nicks Blog</a>
+            <a class="navbar-brand" href="{%  url 'home' %}">Hermans Blog</a>
         </div>
 
         <div class="collapse navbar-collapse"
@@ -62,6 +62,24 @@
 
         <br>
         <br>
+
+        <div id="disqus_thread"></div>
+        <script>
+
+
+             var disqus_config = function () {
+                 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                 this.page.identifier = 'post--{{ post.id }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+             };
+
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://hermanblog-1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 
 
