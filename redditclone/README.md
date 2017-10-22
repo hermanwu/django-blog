@@ -13,8 +13,12 @@
 - create super user
     - python3 manage.py createsuperuser
 
-
 61 Sign Up View 
+- python3 manage.py startapp accounts
+- import accounts.views and add url pattern 
+- add app in the settings.py
+- add request handling in the views.py (signup.html)
+- add form to the signup.html
 
 62 POST vs GET
 
