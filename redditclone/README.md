@@ -21,8 +21,19 @@
 - add form to the signup.html
 
 62 POST vs GET
+- add form action
+    - method="POST" action="{% url 'signup' %}"
+    - add cert_token to the form
+    - add login in the views.py
+        - if request.method == 'POST'
+
 
 63 Creating Users
+- import django User object
+- create a dummy user with username and password passed by the request
+    - User.objects.create_user(request.POST['username],
+                               password = request.POST['password'])
+    - return error is confirmed password does not match
 
 64 Username Uniqueness
 
