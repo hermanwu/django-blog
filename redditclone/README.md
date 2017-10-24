@@ -36,6 +36,12 @@
     - return error is confirmed password does not match
 
 64 Username Uniqueness
+- use try except
+- user = Users.objects.get(username=request.POST['username'])
+- except Users.DoNotExist
+    - create user
+    - import authenticate, login
+    - login the user
 
 65 Login View
 
