@@ -27,7 +27,6 @@
     - add login in the views.py
         - if request.method == 'POST'
 
-
 63 Creating Users
 - import django User object
 - create a dummy user with username and password passed by the request
@@ -44,10 +43,31 @@
     - login the user
 
 65 Login View
+- make a template for login page
+    - remove confirmed password
+- add url to urls.py
+- add login method
+    - follow the how to login section on the django offical website
+    - if user is not None:
+        - login
+    - return error message
 
 66 URL include 
+- import url, include
+- url(r'^accounts/', include('accounts.urls'))
+- create urls.py
+    - past urls about accounts in it
+    - change the action url
 
 67 Posts App
+- create posts app
+- add posts app to setting.py
+- create posts url
+    - urls.py in posts
+    - create method in views.py
+- login_required decorator for views
+    - import login_required
+    - add login_required decorator
 
 68 Next Redirect
 
